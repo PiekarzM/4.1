@@ -13,6 +13,8 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     try {
+      while(true)
+     {
       Scanner scanner = new Scanner(System.in);
       Service s = new Service();
       
@@ -28,12 +30,15 @@ class Main {
         int Wiek = scanner.nextInt();
         s.addStudent(new Student(Imię, Wiek));
         break;
-            
+          case 0:
+            System.exit(0);
+             
         }}
 
       var students = s.getStudents();
       for(Student current : students) {
         System.out.println(current.ToString());
+      }
       }
     } catch (IOException e) {
 
