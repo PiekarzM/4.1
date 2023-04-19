@@ -28,6 +28,7 @@ class Main {
         int Wiek = scanner.nextInt();
         s.addStudent(new Student(Imię, Wiek));
         break;
+            
         }}
 
       var students = s.getStudents();
