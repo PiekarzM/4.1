@@ -20,24 +20,40 @@ class Main {
       
       
       {System.out.println("1.Dodaj studenta");
+       System.out.println("2.Wyświetl liste studentów");
+       System.out.println("0.Opuść program");
       int wybór = scanner.nextInt();
       switch(wybór)
         {
           case 1 :
         System.out.println("Wpisz Imię");
         String Imię = scanner.next();
+        System.out.println("Wpisz Nazwisko");
+        String Nazwisko = scanner.next();
         System.out.println("Wpisz Wiek");
         int Wiek = scanner.nextInt();
-        s.addStudent(new Student(Imię, Wiek));
+        System.out.println("Wpisz Dataurodzenia");
+        String Dataurodzenia = scanner.next();
+       
+            
+        s.addStudent(new Student(Imię,Nazwisko,Wiek,Dataurodzenia));
         break;
           case 0:
             System.exit(0);
-             
-        }}
-
-      var students = s.getStudents();
+          case 2 : 
+            var students = s.getStudents();
       for(Student current : students) {
         System.out.println(current.ToString());
+        }
+          default:
+            break;
+            
+        }
+      
+        
+         
+      
+      
       }
       }
     } catch (IOException e) {

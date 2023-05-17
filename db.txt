@@ -1,6 +1,1 @@
-Krzysztof 20
-Janusz 40
-Mateusz 20
-Mateusz 23
-Mateusz 23
-Mateusz 24
+Mateusz Piekarz 23 05.07.2000
